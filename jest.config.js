@@ -8,6 +8,10 @@ module.exports = {
       outputPath: './reports/test-api-report.html',
       includeFailureMsg: true,
       includeConsoleLog: true,
+    }],
+    ['jest-junit', {
+      outputDirectory: './reports',
+      outputName: 'test-api-report.xml',
     }]
   ]
 };
