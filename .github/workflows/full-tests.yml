@@ -62,5 +62,5 @@ jobs:
       if: success() || failure() 
       with:
         name: Summary report            
-        path: "reports/*.xml"
+        path: "*.xml"
         reporter: jest-junit    
