@@ -13,7 +13,7 @@ npm install
 ```
 
 ## Execução e Relatório de Testes
-Para executar os testes, execute o seguinte comando:
+Para executar os testes e gerar o relatório de testes, execute o seguinte comando:
 
 ```sh
 npm test
