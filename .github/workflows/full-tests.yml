@@ -56,10 +56,11 @@ jobs:
       with:
         name: test-api-xml-report
         path: reports/
-
+    
     - name: Summary report
-      if: always() 
-      uses: test-summary/action@v2
+      uses: dorny/test-reporter@v1
+      if: success() || failure() 
       with:
-        paths: "tests/reports/*.xml"
-         
+        name: Summary report            
+        path: "tests/reports/*.xml"
+        reporter: jest-junit    
